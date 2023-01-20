@@ -1,0 +1,27 @@
+@wp: 100px;
+@ap: 400px;
+.qm-editor {
+  background: floralwhite;
+  min-height: 800px;
+  min-width: 1200px;
+  display: flex;
+  user-select: none;
+
+  /* 部件面板 */
+  > .widget-pannel {
+    background: #ff8c00;
+    width: @wp;
+  }
+
+  /* 画布 */
+  > .qm-canvas {
+    width: calc(100% - @wp - @ap);
+    background: ghostwhite;
+  }
+
+  /* 属性面板 */
+  > .attribute-pannel {
+    width: @ap;
+    background: #fff4ce;
+  }
+}
