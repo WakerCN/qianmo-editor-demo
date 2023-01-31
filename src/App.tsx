@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.less';
 import WidgetPannel from './components/widget-pannel';
+import ReportCanvas from './components/report-canvas';
 
 type WidgetCategory = 'display' | 'container';
 
@@ -27,7 +28,9 @@ function App() {
         <WidgetPannel />
       </section>
       {/* 画布 */}
-      <section className='qm-canvas'>qm-canvas</section>
+      <section className='qm-canvas-wrap'>
+        <ReportCanvas />
+      </section>
       {/* 属性面板 */}
       <section className='attribute-pannel'>attribute-pannel</section>
     </div>
